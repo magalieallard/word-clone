@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
-function GuessInput() {
+function GuessInput({ recordGuess }) {
   const [guess, setGuess] = useState('');
 
   function handleSubmit(event) {
     event.preventDefault();
     console.info({ guess });
+    recordGuess(guess);
     setGuess('');
   }
 
