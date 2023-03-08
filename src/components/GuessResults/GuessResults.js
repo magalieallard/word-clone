@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Guess from '../Guess/Guess';
 import { NUM_OF_GUESSES_ALLOWED } from '../../constants';
 
